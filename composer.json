@@ -37,7 +37,7 @@
   },
   "require": {
     "php": "^7.4 || ^8.0",
-    "nikolaposa/rate-limit": "dev-psr-16",
+    "nikolaposa/rate-limit": "^3.3.0",
     "wp-oop/transient-cache": "*"
   },
   "require-dev": {
