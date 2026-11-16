@@ -20,23 +20,12 @@
     "process-timeout": 0,
     "sort-packages": true,
     "allow-plugins": {
-      "cweagans/composer-patches": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "phpstan/extension-installer": true
     }
   },
-  "repositories": {
-    "nikolaposa/rate-limit": {
-      "url": "https://github.com/BrianHenryIE/rate-limit",
-      "type": "git"
-    },
-    "wordpress/wordpress": {
-      "url": "https://github.com/WordPress/wordpress-develop",
-      "type": "git"
-    }
-  },
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": "^8.1",
     "nikolaposa/rate-limit": "^3.3.0",
     "wp-oop/transient-cache": "*"
   },
@@ -52,7 +41,6 @@
     "codeception/module-phpbrowser": "^1.0.0",
     "codeception/module-webdriver": "^1.0",
     "codeception/util-universalframework": "^1.0",
-    "cweagans/composer-patches": "*",
     "dealerdirect/phpcodesniffer-composer-installer": "*",
     "jaschilz/php-coverage-badger": "^2.0",
     "lucatume/wp-browser": "*",
@@ -63,7 +51,6 @@
     "squizlabs/php_codesniffer": "*",
     "szepeviktor/phpstan-wordpress": "^0.7.2",
     "voku/portable-ascii": "dev-master",
-    "wordpress/wordpress": "*",
     "wp-cli/wp-cli-bundle": "*",
     "wp-coding-standards/wpcs": "*"
   }
