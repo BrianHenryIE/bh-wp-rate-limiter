@@ -68,12 +68,12 @@ class WordPress_Rate_Limiter extends Psr16RateLimiter {
 	 */
 	protected function escape_key( string $key ): string {
 		$reserved_characters = CachePool::RESERVED_KEY_SYMBOLS;
-		$key                 = preg_replace( '#[' . preg_quote( $reserved_characters, '\\' ) . ']#', '-', $key );
+		$escaped_key         = preg_replace( '#[' . preg_quote( $reserved_characters, '#' ) . ']#', '-', $key );
 
-		if ( is_null( $key ) ) {
-			throw new Exception( "Error escaping key: {$key}" );
+		if ( is_null( $escaped_key ) ) {
+			throw new Exception( 'Error escaping key: ' . esc_html( $key ) );
 		}
 
-		return $key;
+		return $escaped_key;
 	}
 }
