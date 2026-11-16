@@ -7,9 +7,6 @@
  * @see https://github.com/wp-oop/transient-cache
  * @see https://github.com/nikolaposa/rate-limit
  *
- * @author     BrianHenryIE <BrianHenryIE@gmail.com>
- * @link       https://BrianHenryIE.com
- * @since      1.0.0
  * @package    brianhenryie/bh-wp-rate-limiter
  */
 
@@ -52,8 +49,6 @@ class WordPress_Rate_Limiter extends Psr16RateLimiter {
 	 *
 	 * @see https://github.com/wp-oop/transient-cache/blob/94b21321867dfb82eda7fe2ab962895c939f446d/src/CachePool.php#L38
 	 *
-	 * @since 1.0.1
-	 *
 	 * @param string $identifier The identifier: who/what is the thing being rate limited.
 	 * @return string
 	 * @throws Exception If escaping the key fails.
@@ -66,8 +61,6 @@ class WordPress_Rate_Limiter extends Psr16RateLimiter {
 
 	/**
 	 * Replaces all reserved characters with hyphens.
-	 *
-	 * @since 1.0.1
 	 *
 	 * @param string $key Key to escape.
 	 * @return string
