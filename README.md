@@ -5,8 +5,7 @@ A rate limiter for WordPress, built on [nikolaposa/rate-limit](https://github.co
 ## Install
 
 ```
-composer config repositories.brianhenryie/bh-wp-rate-limiter git https://github.com/BrianHenryIE/bh-wp-rate-limiter
-composer require wp-oop/transient-cache:@alpha brianhenryie/bh-wp-rate-limiter:dev-master
+composer require wp-oop/transient-cache:@alpha brianhenryie/bh-wp-rate-limiter
 ```
 
 You need `wp-oop/transient-cache:@alpha` because that package has only alpha releases. Composer ignores stability flags set inside dependencies, so your project has to allow alpha itself.
